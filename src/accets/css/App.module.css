@@ -1,0 +1,45 @@
+.footer {
+  width: calc(100vw - 10px);
+  height: 2.5rem;
+  line-height: 2.5rem;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  vertical-align: middle;
+  padding: 0 10px 0 0;
+}
+
+.footer div:nth-of-type(2) {
+  flex-grow: 1;
+  margin: 0 10px;
+}
+
+.footer div:nth-of-type(3) {
+  display: flex;
+}
+
+.footer i {
+  font-size: 20px;
+  padding: 0 6px;
+  display: inline-block;
+  height: 100%;
+}
+
+.footer i:nth-of-type(1) {
+  padding: 0 14px;
+}
+
+.footer i:hover,
+.local:hover {
+  background-color: rgba(244, 244, 244, .3);
+}
+
+.local {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 18px;
+  font-size: 14px;
+  padding: 0 6px;
+  cursor: default;
+}
