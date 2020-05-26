@@ -1,0 +1,83 @@
+.menu {
+  width: 230px;
+  height: 210px;
+  background-color: #f7f7f7;
+  position: fixed;
+  box-shadow: 1px 1px 2px #000000c7;
+}
+
+.menu li {
+  padding: 4px 0 4px 10px;
+  cursor: default;
+}
+
+.menu hr {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.menu li:hover {
+  background-color: #ffffff;
+}
+
+.menuChild {
+  position: relative;
+}
+
+.menuChild ul {
+  background-color: #f7f7f7;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  right: -196px;
+  box-shadow: 1px 1px 2px #000000c7;
+  display: none;
+}
+
+.toLeft {
+  right: 231px !important;
+}
+
+.toTop {
+  top: -118px !important;
+}
+
+.menuChild ul:hover {
+  display: block;
+}
+
+.menuChild>li:hover+ul {
+  display: block;
+}
+
+.menu i {
+  padding-right: 6px;
+}
+
+.menu input[type='radio']+label::before,
+.menu input[type='checkbox']+label::before {
+  content: '\a0';
+  /*不换行空格*/
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  margin-right: 12px;
+  border-radius: 50%;
+  line-height: 10px;
+}
+
+.menu input[type='radio']:checked+label::before {
+  background-color: #000000;
+  background-clip: content-box;
+}
+
+.menu input[type='checkbox']:checked+label::before {
+  content: '✔';
+}
+
+.menu input[type='radio'],
+.menu input[type='checkbox'] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
